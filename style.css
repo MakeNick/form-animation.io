@@ -19,6 +19,14 @@ body {
     background: #1d2b3a;
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #00dfc4;
+    letter-spacing: 10px;
+}
+
 .imputBox {
     position: relative;
     width: 250px;
@@ -44,6 +52,7 @@ body {
     font-size: 1em;
     color: rgb(255,255,255,0.25);
     text-transform: uppercase;
+    letter-spacing: 5px;
     transition: 0.5s;
 }
 
