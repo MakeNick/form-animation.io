@@ -91,14 +91,15 @@ button {
 button:hover {
     width: 250px;
     padding: 8px;
-    font-size: 0.8em;
+    font-size: 1em;
     border: 1px solid rgb(255,255,255,0.25);
     border-radius: 2px;
     background: #1d2b3a;
     text-transform: uppercase;
     color: #00dfc4;
     cursor: pointer;
-    letter-spacing: 15px;
+    letter-spacing: 20px;
     transition: 1s;
     background: #1d2b3a;
+    outline: 1px solid #00dfc4;
 }
