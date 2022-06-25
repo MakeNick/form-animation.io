@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+}
+
+.imputBox {
+    position: relative;
+    width: 250px;
+}
+
+.imputBox input {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid rgb(255,255,255,0.25);
+   background: #1d2b3a;
+   border-radius: 5px;
+   outline: none;
+   color: #fff;
+   font-size: 1em;
+   transition: 0.5s;
+}
+
+.imputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+.imputBox:nth-child(2) input:valid ~ span, 
+.imputBox:nth-child(2) input:focus ~ span {
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+} 
+
+
+.imputBox input:valid ~ span, 
+.imputBox input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.imputBox input:valid, 
+.imputBox input:focus {
+    border: 1px solid #00dfc4;
+}
+
+
+button {
+    width: 250px;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid rgb(255,255,255,0.25);
+    border-radius: 2px;
+    background: #00dfc4;
+    text-transform: uppercase;
+    color: #1d2b3a;
+    cursor: pointer;
+    letter-spacing: 15px;
+    transition: 1.5s;
+}
+
+button:hover {
+    width: 250px;
+    padding: 8px;
+    font-size: 0.8em;
+    border: 1px solid rgb(255,255,255,0.25);
+    border-radius: 2px;
+    background: #1d2b3a;
+    text-transform: uppercase;
+    color: #00dfc4;
+    cursor: pointer;
+    letter-spacing: 15px;
+    transition: 1s;
+    background: #1d2b3a;
+}
